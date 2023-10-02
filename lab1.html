@@ -1,176 +1,89 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset = "utf-8">
-		<title>Lab 1</title>
-		<style>
-		*{
-			background-color: #ccc;
-			
-		}
-		body{
-			font-family: Helvetica, Arial;
-			background-position: top left;
-			
-		}
-		.header{
-			margin: 5px;
-			padding: 11px;
-			border: 3px solid black;
-			height: 80px;
-			background-color: #eee;
-			font-size: 1.2em;
-			text-align: center;
-			
-		}
-		.content{
-			box-sizing: content-box;
-			position: static;			
-		}
-		.footer{
-			margin: 10px;
-			height: 80px;
-			min-height: 50px;
-			background-color: #eee;
-			text-align: center;
-			clear: both;
-		}
-		.article1{
-			margin-left: 35%; 
-			width: 30%; 
-			height: 130px; 
-			padding: 20px; 
-			border: 3px solid purple;
-			overflow: auto;
-			line-height: 130%;
-		}
-		p:last-child{
-			color: black;
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Lab1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+	<style>
+		h4:last-child{
+			margin-top: 10px;
 		}
 		p:first-child{
-			color: green;
+			font-size: 110%;
 		}
-		p:nth-child(3){
-		 color: blue;
-		 font-size: 110%;
-		 }
-		h1{
-			font-family: Garamond, Times;
-			margin-top: 40px;
-		}
-		ul{
-			padding: 20px;
-		}
-		ul.square{
-			list-style-type: square;
-		}
-		li{
-			font-style: italic;
-		}
-		p.line {text-decoration: line-through;}
-		iframe{
-			width: 500px;
-			min-width: 200px;
-			max-width: 600px;
-			height: 180px;
-		}
-		.blockSpan{
-			display: block;
-		}
-		.descr { visibility: hidden; }
-		.blueBlock { background-color:blue; }
-		
-		</style>
-	</head>
-	<body>
-		<link rel="stylesheet" type="text/css" href="C:/Users/dns/Desktop/Учеба/Web/lab1/styles.css" >
-		<header class="header"> 
-			<strong class="header">Лабораторная 1.</strong> Базовая структура HTML-документа. Основы CSS. Щулькин Никита, 932101.</header>
-		<nav>
-			<ul>
-				<li><a href="/">Главная</a></li>
-				<li><a href="/blog">Блог</a></li>
-			</ul>
+		li:nth-child(4){
+		 margin-top: 10px;
+	</style>
+</head>
+<body style="overflow: auto;">
+    <header class="header">
+        Hello, header!
+    </header>
+
+    <div class="content">
+        <div style="font-size: 20px;">
+            <h1>Hello, content!</h1>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <div class="figure"> </div>
+                
+            <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+		<nav class="ref">
+			<a href="www.csd.tsu.ru" style="color: red">www.csd.tsu.ru</a>
 		</nav>
-		<a href="#end"> Заключение</a>
-		
-			<h1>
-				<span style="color:red;">Параграф</span> 1
-			</h1>
-			<iframe src="C:/Users/dns/Desktop/Учеба/Web/lab1/Text.txt"></iframe>
-			<h1> Параграф 2</h1>
-			<pre>         Using "pre" </pre>
-		
-		<div>
-		<p> Using <i>Курсив</i></p>
-		<p> Using <b>Bold</b></p>
-		<p> Using <u>Underlined</u></p>
-		</div>
-		<div class="article1"> <b><u>Машина времени</u></b> — гипотетическое устройство для путешествий во 
-		времени вопреки его естественному ходу. Машина времени является одним из наиболее популярных устройств, 
-		описываемых в научной фантастике. Машиной времени в физике часто называют пространство-время с 
-		замкнутыми непространственноподобными кривыми. В 1948 году Курт Гёдель нашёл решение для составленных Эйнштейном уравнений гравитационного поля, 
-		описывающих вращающуюся Вселенную. Путешествуя в пространстве такой Вселенной, космонавт может достичь своего прошлого.  </div>
-		<h1> Параграф 3</h1>
-			<h3>Разработчики машины:</h3>
-		<ul class="square">
-			<li>Human 1</li>
-			<li>Human 2</li>
-			<li>Human 3</li>
-		</ul>
-		<aside style="float:right; width:199px;">
-			<h3> Машина времени 2028 </h3>
-			<p class = "content"> Ожидается официальное объявление о машине времени в 2028 году. Вот что известно в настоящее время 
-				<a href="http://timemachine.com/">Эта страница еще не создана</a> 
-			</p>
-		</aside> 
-		<table style="border: 3px solid black;">
-			<caption><h3>Модели timemachine</h3></caption>
-			<thead>
-				<tr>
-					<th>Модель</th><th>Разработчик</th><th>Мощность</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>XXX3</td><td>Human1</td><td>Unknown</td>
-				</tr>
-				<tr>
-					<td>HCX24</td><td>Human2</td><td>Unknown</td>
-				</tr>
-				<tr>
-					<td>M3</td><td>Human3</td><td>Unknown</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<th colspan="3">В настоящее время полная информация недоступна</th>
-				</tr>
-			</tfoot>
-		</table>
-		<section>	
-			<h2> Комментарии </h2>
-			<article>
-				<h4> РЕАЛЬНО МАШИНА ВРЕМЕНИ??</h4>
-				<p>Не верю...</p>
-				<h4> Ого!</h4>
-			</article>
-			<article>
-				<h4>Не можеть быть</h4>
-				<p> I just can't..!</p>
-				<p>Интересно, сколько это будет стоить.</p>
-				<p class = "descr">unbelievable</p>
-			</article>
-		</section>
-		<p><span class="blockSpan">==</span>===</p>
-		<h2 id="end"> Заключение</h2>
-		<p class="line">Машину времени еще не придумали</p>
-		<div class="blueBlock"></div>
-		<br>
-		<img src="C:/Users/dns/Desktop/Учеба/Web/lab1/images.png" alt="Super" >
-		<footer class="footer">
-			<p class="footer">Copyright c 2027. SomeFuture.com</p>
-		</footer>
-	</body>
+		<h2 style="word-spacing: 10px;">
+                <span style="color: red;"> Here </span> is the list:
+            </h2>
+        <ul style="margin-top: 15px; list-style-type: disc;"> 
+            <li class="val">
+                Value 1
+            </li>
+            <li class="val" style="letter-spacing: 4px; color: aqua;">
+                Value 2
+            </li>
+            <li class="val">
+                Value 3
+            </li>
+        </ul>
+
+        <div style="margin-top: 15px; display: flex; justify-content: space-between;">
+            <section style="line-height: 27px;">
+                <p><b>Here are some visual styles:</b></p>
+                <h4 style="font-weight: 100;"><i>Italic</i></h4>
+                <h4><b>Bold</b></h4>
+                <h4 style = "font-weight: 100;"><u>Underlined</u></h4>
+                <h4 style = "text-decoration: line-through; font-weight: 100;">Line through</h4>           
+            </section>
+            
+            <aside class="tableimg">
+                <table class = "table">
+                    <tr style = "vertical-align: bottom;">
+                        <td rowspan="2" style="background-color:green; border: 1px solid; vertical-align: bottom;">1</td>
+                        <td style = "border: 1px solid;">2</td>
+                        <td style = "border: 1px solid;">3</td>
+                    </tr>
+                    <tr style = "vertical-align: bottom;">
+                        <td style = "border: 1px solid;">4</td>
+                        <td style = "border: 1px solid;">5</td>
+                    </tr>
+                    <tr style = "vertical-align: bottom;">
+                        <td style = "border: 1px solid;">6</td>
+                        <td colspan="2" style="background-color:red; border: 1px solid;">7</td>
+                    </tr>
+                </table>
+
+                <img src="images.png" alt="super" class="image">
+            </aside>
+        </div> 
+    </div>
+
+    <footer class="footer">
+        <p>Hello, footer!</p>
+    </footer>
+</body>
 </html>
-		
